@@ -1,0 +1,5 @@
+Temp=int(input("Teamperature in your surrounding is:"))
+if (Temp>25):
+    print("You May wear Cotten Clothes")
+else :
+    print("You May wear Woollen Clothes")
