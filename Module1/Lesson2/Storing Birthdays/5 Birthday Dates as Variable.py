@@ -1,11 +1,11 @@
 #My Birthday Date
 Vrishank = "8 March 2014"
 
-#Mother' Birthday Date
+#Mother's Birthday Date
 Monali = "13 December 1988"
 
-#Father' Birthday Date
-Sarvesh = "21 August 1985"
+#Father's Birthday Date
+Sarvesh = "24 August 1985"
 
 #GrandMother's Birthday Date
 Madhu = "9 August 1958"

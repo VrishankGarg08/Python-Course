@@ -12,5 +12,5 @@ print("Hello Everyone.")
 My_Name="Vrishank"
 My_School="DWPS, AJMER"
 print("My Name: ",My_Name)
-print("My School: ",My_School)
-print("Keywords: ", keyword.kwlist)
+print("My School Name is : ",My_School)
+print("Keywords of phython are : ", keyword.kwlist)

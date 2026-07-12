@@ -12,9 +12,9 @@
 # print("Adding a & b :",a+b)
 # print("Subtract a & b :",a-b)
 # print("Product of a & b :",a*b)
-# print("Dividing a & b :",4/b) # It returns us with the quotient, fraction value or decimal value, which it will be dividing it fully.
+# print("Dividing a & b :",a/b) # It returns us with the quotient, fraction value or decimal value, which it will be dividing it fully.
 # print("Modulus of a & b :",a%b) # It returns us with the remainder
-# print("Floor division of a & b :",4//b) # It returns us with the Quotient 
+# print("Floor division of a & b :",a//b) # It returns us with the Quotient 
 # print("a raised to the power of b :",a**b) # It raises the power.
 
 #  2. Comparison Operators : They are used to compare two operands and return either True or False, they are used for making decisions. like - Equal to(==),Not equal to(!=),greater than(>),Smaller than(<),Greater than equal to(>=),Less than equal to(<=).

@@ -25,7 +25,7 @@ print("Your Name is : ", Name)
 
 # Indexing
 string="Coding"
-print("Position 3rd of alphabet on in Coding is: ", string[3])
+print("Position of 3rd alphabet in Coding is: ", string[3])
 
 # Concatenation
 str1="Hello "

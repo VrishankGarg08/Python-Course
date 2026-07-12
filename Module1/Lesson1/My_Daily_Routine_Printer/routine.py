@@ -21,4 +21,4 @@ print("I play with my friends before dinner.")
 print("I study for 2 hours after dinner.")
 
 #Calculating the total time spent on Studying in a week
-print("Total study hours in a week:", 2 * 7)
+print("Total study hours in a week:", 2*7)
