@@ -30,10 +30,12 @@ print("Leftover stars     :", leftover)
 # --- Comparison Operators (>, <, ==, >=) ---
 # Compare this week's points with last week's points
 last_week = 500
- 
-print("Better than last week? :", total > last_week)
-print("Same as last week?     :", total == last_week)
-print("At least as good?      :", total >= last_week)
+if total > last_week :
+    print("Better than last week? :", total > last_week)
+elif total == last_week :
+    print("Same as last week?     :", total == last_week)
+else :
+    print("At least as good?      :", total >= last_week)
  
 # --- Assignment Operators (+=, -=) ---
 # Bonus challenge adds 30 points to the total

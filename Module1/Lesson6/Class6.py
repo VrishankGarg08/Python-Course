@@ -80,6 +80,14 @@
 
 # Step 10:  Run the program with three different combinations of inputs to test all branches.
 
-Weather=input("WHAT'S THE WEATHER ? :".upper())
-Day=input("WHAT'S THE DAY? :")
-Homework=input("IS YOUR HOMEWOR DONE ? :")
+Weather=input("WHAT'S THE WEATHER?(Rainy/Cloudy/Sunny) :").upper
+Day=input("WHAT'S THE DAY? :(Weekend / Monday / Friday / School day)").upper
+Homework=input("IS YOUR HOMEWOR DONE ? (Complete or Incomplete):").upper
+
+if Weather=="SUNNY" and Homework=="Complete" :
+    print("Best Plan:Play Outise")
+if Weather=="RAINY" or Weather=="Cloudy" :
+    print("Best Plan: Go to play in Rain")
+if not Homework=="Complete" :
+    print("Best Plan: Complete the homework")
+print("Plan Complete! Have A Wonderful Day !!")
