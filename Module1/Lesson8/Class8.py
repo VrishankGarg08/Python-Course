@@ -106,7 +106,10 @@ total_number = 18
 wrong_mean = (mean1 + wrong_number + correct_number + total_number)
 Sum = (mean1 * total_number)
 print(Sum)
-
+Num2=Sum-wrong_number+correct_number
+print(Num2)
+Mean2=Num2/total_number
+print(Mean2)
 # Activity 4:
 
 # 1) Take three integer inputs from the user and store them in `a`, `b`, and `c`.
