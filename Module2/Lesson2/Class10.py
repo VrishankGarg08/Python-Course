@@ -1,6 +1,7 @@
 #Topic: Loops
 #Types of Loops:
-#For Loop: It's used to Iterate(Move or Repeat) over a sequence such as string with the help of for loop we can  Iterate over each item that is present in a squence and exectue the same set of oprations again and again.
+#1st For Loop: It's used to Iterate(Move or Repeat) over a sequence such as string with the help of for loop we can  Iterate over each item that is present in a squence and exectue the same set of oprations again and again.
+#Rest in next Sessions
 #Example 1:
 # N="HELLO WORLD"
 # for I in N:
