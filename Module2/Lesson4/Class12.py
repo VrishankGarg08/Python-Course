@@ -1,0 +1,53 @@
+#Topic : Nested Loops
+# Nested Loops : Is A Loop placed entirely inside a body of another loop. Inner Loop finishes everyone of its repeats each time the outer loop runs once.
+# Nested While Loop : Is a while loop inside a while loop.
+#Example :
+# i = 1
+# while i <= 3:
+#     J = 1
+#     while J <= 3:
+#         print(i * J,end = " ") # end is used for adding a space
+#         J = J+1
+#     print()
+#     i = i + 1
+
+#Nested For Loop : Used for making patterns 
+#Example :
+# for i in range(1,3) :
+#     for j in range(1,3):
+#         print(i*j,end = " ")                                      
+#     print()                                                        
+
+# for i in range(1,4): # for i=0 i<3 i=i+1
+#     print("New value after each cycle",i)
+
+# continue # is keyword that skips the remaining code in the courrent repeat cycle and jumps straight back to loops condition.
+for i in range(10) :
+    if i == 3 :
+        continue 
+    elif i == 6 :
+        continue
+    elif i== 8 :
+        continue
+    else :
+        print(i)
+
+
+# Activity 1:
+# This one activity keeps you working with both nested loop types end to end - a daily ATM session that serves several customers, then a denomination report printed once the day is done.
+#Steps
+# Step 1: Set up six counter variables (one per note value) plus counters for customers served and
+# total dispensed, all starting at 0.
+# Step 2: Start an outer while loop that keeps serving customers until the flag variable serving
+# becomes False.
+# Step 3: Ask for the customer's name and withdrawal amount; if the amount is invalid, print a
+# message and continue back to the top of the loop.
+# Step 4: Inside that same repeat, run an inner while loop that checks each of the six note values
+# one at a time and works out how many of each note to dispense.
+# Step 5: Update the matching counter variable for whichever note value was just dispensed, then
+# ask if there is a next customer, setting serving to False if not.
+# Step 6: Once the outer while loop ends, start an outer for loop stepping through each of the six
+# note values to print the daily denomination report.
+# Step 7: Inside that same repeat, run an inner for loop that prints one symbol for every note of that
+# value dispensed across the whole day.
+    
