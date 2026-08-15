@@ -13,27 +13,25 @@
 
 #Nested For Loop : Used for making patterns 
 #Example :
-# for i in range(1,3) :
-#     for j in range(1,3):
-#         print(i*j,end = " ")                                      
-#     print()                                                        
+for i in range(1,3) :
+    for j in range(1,3):
+        print(i*j,end = " ")                                      
+    print()                                                        
 
 # for i in range(1,4): # for i=0 i<3 i=i+1
 #     print("New value after each cycle",i)
 
 # continue # is keyword that skips the remaining code in the courrent repeat cycle and jumps straight back to loops condition.
-for i in range(10) :
-    if i == 3 :
-        continue 
-    elif i == 6 :
-        continue
-    elif i== 8 :
-        continue
-    else :
-        print(i)
-
-
-# Activity 1:
+# for i in range(10) :
+#     if i == 3 :
+#         continue 
+#     elif i == 6 :
+#         continue
+#     elif i== 8 :
+#         continue
+#     else :
+#         print(i)
+# # Activity 1:
 # This one activity keeps you working with both nested loop types end to end - a daily ATM session that serves several customers, then a denomination report printed once the day is done.
 #Steps
 # Step 1: Set up six counter variables (one per note value) plus counters for customers served and
@@ -59,12 +57,12 @@ total_dispensed = 0
 serving = True
 while serving:                                # outer while -- one customer per loop
     name = input("Enter customer name: ")
-    amount = int(input("Hello {name}! Enter withdrawal amount: "))
+    amount = int(input(f"Hello {name}! Enter withdrawal amount: "))
     if amount <= 0:
         print("Invalid amount. Please enter a positive number.")
         continue
 
-    print("Dispensing {amount} units for {name}:")
+    print(f"Dispensing {amount} units for {name}:")
     remaining = amount
     idx = 1
     while idx <= 6:                            # inner while -- breaks amount into notes
@@ -81,7 +79,7 @@ while serving:                                # outer while -- one customer per 
         else: value = 1
         count = remaining // value
         if count > 0:
-            print("{count} x {value}-unit note(s) =",count * value)
+            print(f"{count} x {value}-unit note(s) =",count * value)
             remaining -= count * value
             if value == 100:
                 total_100 += count
@@ -98,7 +96,7 @@ while serving:                                # outer while -- one customer per 
 
     customers_served += 1
     total_dispensed += amount
-    print("Transaction complete, {name}!")
+    print(f"Transaction complete, {name}!")
     again = input("Next customer? (yes/no): ").strip().lower()
     if again != "yes":
         serving = False
@@ -112,11 +110,11 @@ for slot in range(1, 7):                      # outer for -- one denomination pe
     elif slot == 5: value, total = 5, total_5
     else: value, total = 1, total_1
     if total > 0:
-        print("  {value}-unit notes dispensed : {total} ", end="")
+        print(f"  {value}-unit notes dispensed : {total} ", end="")
         for note in range(total):             # inner for -- one symbol per note
-            print("=", end="")
+            print(end="")
         print()
 
-print("Customers served : {customers_served}")
-print("Total dispensed  : {total_dispensed} units")
-print("ATM session closed. Goodbye!")
+print(f"Customers served : {customers_served}")
+print(f"Total dispensed  : {total_dispensed} units")
+print(f"ATM session closed. Goodbye!")
