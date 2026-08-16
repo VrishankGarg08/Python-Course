@@ -15,16 +15,16 @@
 #     print()
 #Diamond 
 #take input from user
-rowSize = int(input("enter the number of rows: "))
-if rowSize%2==0: #conditions
-  halfDiamRow = int(rowSize/2)
+rowSize = int(input("Enter the number of rows: ")) #For Eg : Row Size = 10
+if rowSize%2==0: #conditions # Row Size  / 2 gives 0 
+  halfDiamRow = int(rowSize/2) #halfDiamRow = 5
 else:
   halfDiamRow = int(rowSize/2)+1
-space = halfDiamRow-1
+space = halfDiamRow-1 # 5 - 1 =4
 #loop for upper part 
-for i in range(1, halfDiamRow+1): #loop for rows
-  for j in range(1, space+1): #loop for columns
-    print(end=" ")
+for i in range(1, halfDiamRow+1): #loop for rows # 1 , 6
+  for j in range(1, space+1): #loop for columns  # 1 , 5
+    print(end=" ") 
   space -=1
   num = 1
   for j in range(2*i-1):
@@ -36,11 +36,11 @@ space+= 1
 #loop for lower part
 for i in range(1, halfDiamRow): #loop for rows
   for j in range(1, space+1):  #loop for columns
-    print(end=" ")
+    print( end=" ")
   space +=1
   num = 1
   for j in range(1, 2*(halfDiamRow-i)):
-    print(end=str(num)) #display result
+    print(end= str(num)) #display result
   #incerementing number at each column
     num +=1
   print()
