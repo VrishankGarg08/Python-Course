@@ -6,7 +6,8 @@
 def greet ():
     return("Welcome")
 
-def name () :
-    print("Home")
-name () 
-greet ()
+def name (name1) :
+    print("Intelligent",name1)
+name ("Vrishank") 
+greet () 
+
