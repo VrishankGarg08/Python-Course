@@ -53,6 +53,7 @@ def calculate_total(total_cost1) :
         return(total_cost1)
 calculate_total (total_cost)
 print("Your Total Cost is", total_cost)
+total_money = 0
 total_money += total_cost
 customer += 1
 user_paid = int(input("Enter The Cost You are Paying :"))
