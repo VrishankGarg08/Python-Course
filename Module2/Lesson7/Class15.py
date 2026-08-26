@@ -4,13 +4,13 @@
 # Built in : They are the functions that already exsist in PYTHON..
 # User Defined : They are the functions which are defined by US .
 # Arguments are piece of information that we write inside the brackets when we call a function so that , the USER can use the function with different values every sungle time..
-# def greet ():
-#     print("Welcome")
+def greet ():
+    print("Welcome")
 
-# def name (name1) :
-#     print("Intelligent",name1)
-# name ("Vrishank") 
-# greet () 
+def name (name1) :
+    print("Intelligent",name1)
+name ("Vrishank") 
+greet () 
 
 #ACTIVITY :
 # A Lemonade Stand Calculator that greets every customer, calculates the total cost and change due using functions with arguments and return statements, and prints a personalized thank you message alongside the final receipt.
@@ -25,6 +25,7 @@
 # Step 7: Print the final lemonade stand receipt with every calculated value.
 SERVING = True
 customer = 0
+total_money = 0
 while SERVING :
     Name = input("Enter You Name :")
     def greet_customer (Name1) :
@@ -46,28 +47,32 @@ while SERVING :
         prize = int(input(f"Enter The Price of Cup ? :"))
         total_cost += (prize*number)
         item_number += 1
-        if total_cost > 500 :
-            print("Please Reduce The No. Of Cups (Max Amount Of a Particular Cup Can be 500 Rs. Only.. ) ")
-        continue
-def calculate_total(total_cost1) :
+        if total_cost > 1000 :
+            print("Please Reduce The No. Of Cups (Max Amount Of a Particular Cup Can be 1000 Rs. Only.. ) ")
+    def calculate_total(total_cost1) :
         return(total_cost1)
-calculate_total (total_cost)
-print("Your Total Cost is", total_cost)
-total_money = 0
-total_money += total_cost
-customer += 1
-user_paid = int(input("Enter The Cost You are Paying :"))
-change_due = user_paid - total_cost
-def calculate_change(change_due1) :
-    return(change_due1)
-calculate_change (change_due)
-print("Amount to Be Returned =",change_due)
-Thankyou_msg = "== Your Welcome =="
-def thankyou_msg () :
-     return(thankyou_msg)
-print(Thankyou_msg)
-print(calculate_total)
-print("=============================================================================================================")
-print("Customer Served :",customer )
-print("Money Earned :", total_money)
-SERVING = False
+    calculate_total (total_cost)
+    print("Your Total Cost is", total_cost)
+    total_money += total_cost
+    customer += 1
+    user_paid = int(input("Enter The Cost You are Paying :"))
+    change_due = user_paid - total_cost
+    def calculate_change(change_due1) :
+        return(change_due1)
+    calculate_change (change_due)
+    print("Amount to Be Returned =",change_due)
+    if change_due < 0 :
+        print("Amount Still Needed",change_due)
+    Thankyou_msg = "== Your Welcome =="
+    def thankyou_msg () :
+        return(thankyou_msg)
+    print(Thankyou_msg)
+    print("Total Amount " , total_cost)
+    print("=========================================================================================================")
+    print("Customer Served :",customer )
+    print("Money Earned :", total_money)
+    Queue = input("Are There More Customers ?").upper().strip()
+    if Queue == "YES" :
+        SERVING = True
+    else :
+        SERVING = False
