@@ -14,6 +14,7 @@
 # print(add(234567 , 876543 ))
 
 # When A FUNTION Calls itself to solve a smaller version of the same problem it is called recursion
+
 # Example 
 def factorial (n):
     if n == 1 : 
