@@ -1,7 +1,7 @@
 # TOPIC : KEYWORDS
 # Keyword is a word specially resserved by python. It has a fix meaning which we can't use as a variable..
 # Return keyword is used inside a function to send back a result and stop the function from running further...
-# Break Keyword is used to immediatly stop a loop even if the loop wasn'y finished..
+# Break Keyword is used to immediatly stop a loop even if the loop wasn't finished..
 # Continue Keyword it skips current round of the loop and move to the next one..
 # Pass Keyword does nothing.It is used wehn we need to write some code structure but are not ready to write the actual logic..
 # EXAMPLE of RETURN :
