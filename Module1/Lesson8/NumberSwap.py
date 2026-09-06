@@ -6,3 +6,5 @@ Num = A
 A = B
 B = C
 C = Num
+print("AFTER SWAPPING ")
+print(f" No.1 = {A} , No.2 = {B} , No.3 = {C}")
