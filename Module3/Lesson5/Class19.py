@@ -8,13 +8,13 @@
 # Math Module 
 # Math Module is a built in python tool kit which is like scientific CALCULATOR.
 # HCF AND GCD ARE SAME............
-import math
-print(math.ceil(4.8,5) )#CEILING = UPSIDE = ROUNDS THE NO. UP
-print(math.floor(6.9))#FLOOR = DOWNSIDE = ROUNDS THE NO. DOWN
-print(math.fabs(-5) )# IT IS LIKE ABSULUTE VALUE -5 WILL GIVE 5 # Floating absulute Value 
-# print(math.copysign()) # X = SIZE AND Y = SIGN OF INTEGAR.
-print(math.copysign(4,-1)) # X = SIZE AND Y = SIGN OF INTEGAR 
-print(math.gcd(10,20,30,40,50))# Work The Same as HCF # IT REQUIRES ATLEAST 2 VALUSE
+# import math
+# print(math.ceil(4.8) )#CEILING = UPSIDE = ROUNDS THE NO. UP
+# print(math.floor(6.9))#FLOOR = DOWNSIDE = ROUNDS THE NO. DOWN
+# print(math.fabs(-5) )# IT IS LIKE ABSULUTE VALUE -5 WILL GIVE 5 # Floating absulute Value 
+# # print(math.copysign()) # X = SIZE AND Y = SIGN OF INTEGAR.
+# print(math.copysign(4,-1)) # X = SIZE AND Y = SIGN OF INTEGAR 
+# print(math.gcd(10,20,30,40,50))# Work The Same as HCF # IT REQUIRES ATLEAST 2 VALUSE
 
 # Activity 1: Number game
 
@@ -65,7 +65,7 @@ import random
 Valid = True
 Score = 0
 while Valid:
-  Choice = input("Enter You Choice (ROCK/PAPER/SCISSOR) : ").upper().slice()
+  Choice = input("Enter You Choice (ROCK/PAPER/SCISSOR) : ").upper()
   if Choice not in ["ROCK","PAPER","SCISSOR"]:
     print("Please Enter Valid Choice")
   Guessing = random.randint(1,3)
@@ -75,20 +75,30 @@ while Valid:
     Guess = "PAPER"
   elif Guessing == 3 :
     Guess = "SCISSOR"
-  print(f"Computer's Choice{Guess} and Your Choice{Choice}")
+  print(f"Computer's Choice : {Guess} and Your Choice : {Choice}")
   if Guess == "ROCK" and Choice == "SCISSOR" or Guess == "PAPER" and Choice == "ROCK" or Guess == "SCISSOR" and Choice == "PAPER":
     print("Better Luck Next Time!")
     print("Your Total Score ",Score)
-    More = input("If You Want To Play 1 More Round Type 1 OTHERWISE Type 2 ").slice()
-    if More == 1 :
+    More = int(input("If You Want To Play 1 More Round Type 1 OTHERWISE Type 2 : "))
+    if More == int(1) :
       Valid = True
-    elif More == 2:
+    elif More == int(2):
       Valid = False
     else :
-      print("Please Enter Valid Number")
-  elif Guess != Choice :
+      Again = False
+      while not Again :
+          try :
+              N = int(input("Enter A Number : "))
+              Again = True
+          except ValueError :
+              print(" Your Number WAS NOT Valid.")
+  elif Guess == "ROCK" and Choice == "PAPER" or Guess == "PAPER" and Choice == "SCISSOR" or Guess == "SCISSOR" and Choice == "ROCK" :
+    print("You Won This Round!")
     Score += 1
     print("Your Score After This Round", Score)
+  elif Guess == Choice :
+    print("Guess Are Same..")
+    print("No Point Will Be Added.")
   
 # Activity 3: Mathematical operations
 # WHAT YOU WILL BUILD
