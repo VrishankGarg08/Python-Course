@@ -76,10 +76,16 @@ while Valid:
   elif Guessing == 3 :
     Guess = "SCISSOR"
   print(f"Computer's Choice{Guess} and Your Choice{Choice}")
-  if Guess == "ROCK" and Choice == "SCISSOR" or Guess == "PAPER" and Choice == "ROCK" or Guess ==:
+  if Guess == "ROCK" and Choice == "SCISSOR" or Guess == "PAPER" and Choice == "ROCK" or Guess == "SCISSOR" and Choice == "PAPER":
     print("Better Luck Next Time!")
     print("Your Total Score ",Score)
-    Valid = False
+    More = input("If You Want To Play 1 More Round Type 1 OTHERWISE Type 2 ").slice()
+    if More == 1 :
+      Valid = True
+    elif More == 2:
+      Valid = False
+    else :
+      print("Please Enter Valid Number")
   elif Guess != Choice :
     Score += 1
     print("Your Score After This Round", Score)

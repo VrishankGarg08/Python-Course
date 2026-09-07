@@ -15,14 +15,14 @@
 # else block will work when there is no error is the TRY BLOCK .
 # finnaly block will RUNS ALWAYS WHETER THERE IS A ERROR OR NOT.
 # Example 2 :
-# try :
-#     N = int(input("Enter A Number : "))
-#     Result =(10 / N)
-#     print("Result :",Result)
-# except ValueError :
-#     print("Enter A Valid Number ")
-# else :
-#     print("Your Number Was Valid.")
+try :
+    N = int(input("Enter A Number : "))
+    Result =(10 / N)
+    print("Result :",Result)
+except ValueError :
+    print("Enter A Valid Number ")
+else :
+    print("Your Number Was Valid.")
 # finally :
 #   print("==========================================!Thanks For Trying!========================================")
 # EXAMPLE 3:
