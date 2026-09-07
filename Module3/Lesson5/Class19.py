@@ -104,3 +104,9 @@ while Valid:
 # WHAT YOU WILL BUILD
 # You use five different math module functions to round, find absolute values, copy a sign, and calculate a
 # greatest common divisor.
+import math
+print(math.ceil(6.7))
+print(math.floor(7.8))
+print(math.fabs(7))
+print(math.copysign(7,18))
+print(math.gcd(7,14,21,42))
