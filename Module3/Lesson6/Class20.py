@@ -28,25 +28,76 @@
 print("=======================================================================================================")
 Operation = input("Enter Your Operation : ").upper()
 try :
-    a = int(input(f"Enter Your 1st Number For {Operation} : "))
-    b = int(input(f"Enter Your 2nd Number For {Operation} : "))
+    a = int(input(f"Enter Your 1st Number For {Operation} : ")) 
+    b = int(input(f"Enter Your 2nd Number For {Operation} : ")) 
 except ValueError :
     print("Please Enter A Valid Positive Number")
 except ZeroDivisionError :
     print("Please Don't Enter ZERO as Your Number")
 if Operation == "ADD":
     def add(c,d) :
-        print(add(c + d))
+        return c + d
     print(add( a + b ))
 elif Operation == "SUBTRACT":
     def subtract(c ,d) :
-        print(subtract(c  - d))
+        return c  - d
     print(subtract( a  - b ))
 elif Operation == "MULTIPLY" :
     def multiply(c ,d) :
-        print(multiply(c  * d))
+        return c  * d
     print(multiply( a * b ))
 elif Operation == "DIVIDE":
     def divide(c ,d) :
-        print(divide(c  / d))
+        return c  / d
     print(divide( a / b ))
+    divide(a , b)
+else :
+    print("PLEASE ENTER VALID OPERATION FROM ADD, SUBTRACT , MULTIPLY, DIVIDE.")
+
+
+
+
+################################################################################################################
+def add(a,b):
+    return a+b
+def subtract(a,b):
+    return a-b
+def multiply(a,b):
+    return a*b
+def divide(a,b):
+    return a/b
+def proper_number(prompt):
+    """Keep asking until the user enters a valid number."""
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Invalid Input. Please enter a numeric value.")
+def operation():
+    """Keep asking until the user enters a valid number."""
+    valid_ops={"+","-","*","/"}
+
+    while True:
+        op=input("Choose an operation (+,-,*,/): ").strip()
+        if op in valid_ops:
+            return op
+        print("Invalid Operation.")
+def calculator():
+    print("=== Simple Calculator ===")
+    op=operation()
+    num1=proper_number("Enter the first number: ")
+    num2=proper_number("Enter the second number: ")
+    try:
+        if op=="+":
+            result= add(num1,num2)
+        elif op=="-":
+            result= subtract(num1,num2)
+        elif op=="*":
+            result= multiply(num1,num2)
+        elif op=="/":
+            result= divide(num1,num2)
+        print(f"\nResult: {num1} {op} {num2} = {result}")
+    except ZeroDivisionError:
+        print("\n Error: Cannot divide by zero.")
+
+calculator()
