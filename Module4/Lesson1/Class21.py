@@ -28,10 +28,18 @@
 # Step 3: Use the * operator to repeat [1, 2, 3] three times and store it in triples.
 # Step 4: Print the triples list.
 # Step 5: Create a list called aList holding five numbers.
-# Step 6: Reverse aList using slicing with [ :- 1] and store it back into aList.
+# Step 6: Reverse aList using slicing with [ ::- 1] and store it back into aList.
 # Step 7: Print the reversed aList.
 print("======================================================================================================")
-
+empty_list = []
+print()
+numbers = [1, 2, 3, 4, 5]
+print(numbers)
+triples = [1, 2, 3] * 3
+print(triples)
+aList = [100, 200, 300, 400, 500]
+aList = aList[::-1]
+print(aList)
 # ACTIVITY 2
 # Write a Python program to count the number of strings where the string length is two or more, and the first and last characters are the same from a given list of strings.
 
@@ -49,7 +57,18 @@ print("=========================================================================
 # Step 7: Return ctr, call match_words() with a sample list, and print the final count.
 
 print("======================================================================================================")
-
+def match_words(words):
+	ctr = 0
+	lst = []
+	for word in words:
+		if len(word) > 1 and word[0] == word[-1]:
+			ctr += 1
+			lst.append(word)
+	
+	print("List of words with first and last character same", lst)
+	return ctr
+count = match_words(['abc', 'cfc','xyz', 'aba', '1221'])
+print("Number of words having first and last character same:", count)
 #ACTIVITY 3
 # Write a Python program to find the sum and average of the list. The average of the list is defined as the sum of the elements divided by the number of the elements. Also, find the largest and the smallest number in the list.
 # Play with Lists
@@ -66,3 +85,29 @@ print("=========================================================================
 # Step 6: Sort Lin ascending order using L.sort().
 # Step 7: Print L[o] as the smallest element and L[-1] as the largest element.ITY 
 print("======================================================================================================")
+L = [4, 5, 1, 2, 9, 7, 10, 8]
+print("Original List :", L)
+  
+# variable to store the sum of 
+# the list
+count = 0
+  
+# Finding the sum
+for i in L:
+    count += i
+      
+# divide the total elements by
+# number of elements
+avg = count/len(L)
+  
+print("sum = ", count)
+print("average = ", avg)
+
+# Sorting the elements of the list
+L.sort()
+ 
+# printing the first element
+print("Smallest element is:", L[0])
+
+# printing the last element
+print("Largest element is:", L[-1])
