@@ -64,11 +64,23 @@
 #     print(key," : ",value)
 
 # Activity 1 : First, create a dictionary that consists of - id, name, class and subject integration of students. Then, write a program to retrieve unique entries and eliminate the rest.
-ID1 = {"ID" : 211152,"NAME" : "VRISHANK","CLASS" : 7,"SUBJECT" : "MATH"}
-ID2 = {"ID" : 211153,"NAME" : "KANGANA","CLASS" : 7,"SUBJECT" : "MATH"}
-ID3 = {"ID" : 211154,"NAME" : "KRISHNA","CLASS" : 7,"SUBJECT" : "MATH"}
-ID4 = {"ID" : 211155,"NAME" : "ABHISHEK","CLASS" : 7,"SUBJECT" : "MATH"}
+# Dictionary of students (id -> details)
+student_data = {
+    "id1": {"name": "Sara",  "class": "V", "subject_integration": "english, math, science"},
+    "id2": {"name": "David", "class": "V", "subject_integration": "english, math, science"},
+    "id3": {"name": "Sara",  "class": "V", "subject_integration": "english, math, science"},  
+    "id4": {"name": "Surya", "class": "V", "subject_integration": "english, math, science"},
+}
+result = {}
+seen_keys = []  
+for student_id, details in student_data.items():
+    unique_key = (details["name"], details["class"], details["subject_integration"])
 
+    if unique_key not in seen_keys:
+        seen_keys.append(unique_key)
+        result[student_id] = details
+for k, v in result.items():
+    print(k, ":", v)
 # Activity 2 : Write a program to check the frequency of a value in a dictionary - {'Codingal' : 2, 'is' : 2, 'best' : 2, 'for' : 2, 'Coding' : 1}.
 test_dict = {'Codingal' : 2, 'is' : 2, 'best' : 2, 'for' : 2, 'Coding' : 1}
 print("The original dictionary : ",test_dict)
