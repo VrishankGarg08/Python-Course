@@ -6,13 +6,15 @@ print(MySet)
 # Adding One Items To A Set : (.add)
 MySet.add(7)
 print("After Adding One No.", MySet)
+# ADDING MULTIPLE ITEMS ...
 MySet.update([6,7,8,9,10])
 print("After Adding More No.", MySet )
 # Set Intersection :
 x = {1,2,3,4,5,":)",67}
-y = {6,7,8,9,10,":)",67}
+y = {6,7,8,9,10,5,":)",67}
+z = {":)",67}
 # Using Symbol
-Common1 = x & y
+Common1 = x & y & z
 print(Common1)
 # Using Method 
 Common2 = x.intersection(y)
