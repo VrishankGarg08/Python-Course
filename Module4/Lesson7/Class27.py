@@ -21,10 +21,10 @@
 # Total  →  40 marks
 # ========================================================================
 
-A = {"Vrishank":99,"Ishaan":89,"Dhoni":100,"Ronaldo":98,"Sachin":95}
+A = {"Vrishank":100,"Ishaan":89,"Dhoni":80,"Ronaldo":98,"Sachin":95}
 print(A)
 for i in A :
-    Average = (99+89+100+98+95)/(100*5)
+    Average = int((99+89+100+98+95)/(100*5))
 print(Average)
 B = max(A)
 print("Maximum Marks :", B)
@@ -32,7 +32,7 @@ C = min(A)
 print("Minimum Marks :", C)
 try :
     Name = input("Enter the Name of Student you want to visit :")
-    D= A.pop[Name]
+    D= A.get(Name)
     print(D)
 except TypeError:
     print("Please Check the spelling of the person")
