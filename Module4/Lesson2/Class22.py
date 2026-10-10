@@ -14,7 +14,7 @@
 A = (7,"Vrishank",)
 V = (45,7,18,)
 V = V+(9,)
-T = (7, "Is","Number","Jursey","Your","Hi")
+T = (7, "Is","Number","Of","Jursey","Your","Hi")
 print(len(T))
 print(T[::-1])
 print(A)
