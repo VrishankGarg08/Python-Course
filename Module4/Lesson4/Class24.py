@@ -17,13 +17,9 @@ z = {":)",67}
 Common1 = x & y & z
 print(Common1)
 # Using Method 
-Common2 = x.intersection(y)
+Common2 = x.intersection(y),y.intersection(z)
 print(Common2)
 # Hence, PROVED BOTH ARE SAME""
-
-
-
-
 # Arrays : Collection of items that are all of 1 Data type .. IT HAS A FIXED ORDER INSIDE THE MEMORY OF COMPUTER. ## We Need To Import It 
 import array as arr
 a = arr.array('i',[67,24,24,24,24,24,24,24,24,24,24,24,24,24,24]) 
