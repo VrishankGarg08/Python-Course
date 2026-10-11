@@ -1,4 +1,4 @@
-books = ["matilda", "harry potter", "wonder", "the jungle book", "charlie"]
+books = ["Matilda","Harry Potter","Wonder","The Jungle Book","Charlie"]
 copy_counts = [4, 0, 6, 3, 2]
 library = {book: count for book, count in zip(books, copy_counts)}
 print("Full Library Stock:", library)
@@ -23,5 +23,6 @@ print("Book Borrowed:", chosen_book)
 print("Late Fee:", chosen_fee)
 print("Updated Library Stock:", library)
 print("=============================================")
+
 
 # Issued From The Reference Code...
