@@ -34,5 +34,5 @@ if Grades[name] > top_score :
     top_score = Grades[name]
 print("Highest Scorer :", top_name)
 print("Highest Score :", top_score)
-A = input("Enter a Student's name :")
-print(Grades.get(LookupError,"Not Found"))
+Name = input("Enter a Student's name :")
+print(Grades.get[name],"Not Found")
