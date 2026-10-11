@@ -21,18 +21,18 @@
 # Total  →  40 marks
 # ========================================================================
 
-A = {"Vrishank":100,"Ishaan":89,"Dhoni":80,"Ronaldo":98,"Sachin":95}
+A = {"Vrishank":100, "Ishaan":89, "Dhoni":80, "Ronaldo":98, "Sachin":95}
 print(A)
-for i in A :
-    Average = int((99+89+100+98+95)/(100*5))
-print(Average)
+for i in A:
+    Average = (100 + 89 + 80 + 98 + 95) / 5
+print("Class Average:", Average)
 B = max(A)
-print("Maximum Marks :", B)
+print("Maximum Marks:", B)
 C = min(A)
-print("Minimum Marks :", C)
-try :
-    Name = input("Enter the Name of Student you want to visit :")
-    D= A.get(Name)
-    print(D)
-except TypeError:
-    print("Please Check the spelling of the person")
+print("Minimum Marks:", C)
+Name = input("Enter the Name of Student you want to search: ")
+D = A.get(Name)
+if D in A:
+    print("Student Marks:", D)
+else:
+    print("Student not found")
