@@ -1,28 +1,25 @@
-books = ["Matilda","Harry Potter","Wonder","The Jungle Book","Charlie"]
-copy_counts = [4, 0, 6, 3, 2]
-library = {book: count for book, count in zip(books, copy_counts)}
-print("Full Library Stock:", library)
-available_books = [book for book in books if library[book] > 0]
-print("Books Available:", available_books)
-chosen_book = input("Which book do you want to borrow? ")
-if chosen_book not in library or library[chosen_book] == 0:
-    print(chosen_book, "is not available! Stopping the checker.")
+Books = ["Tressure Island","Gerimino Stilton","Wimpy Kid","Sundha Murti","Dog Man"]
+Copy_of_books = [1,0,16,3,12]
+Library = {book:count for book, count in zip(Books,Copy_of_books)}
+print("Library :", Library)
+Available = [book for book in Books if Library[book] > 0]
+print("Books Available:", Available)
+Book_Choice = input("Which book do you want to borrow? :").split()
+if Book_Choice not in Books or Library[Book_Choice]:
+    print(Book_Choice, "Sorry! We Do not have This Book in Stock")
+    print("Please Visit Us Next Time")
     exit()
-late_fees = [5, 8, 4, 6, 7]
-extra_fee = int(input("Enter the extra library fee to add to every book: "))
-updated_fees = list(map(lambda fee: fee + extra_fee, late_fees))
-print("Updated Late Fees:", updated_fees)
-book_index = books.index(chosen_book)
-chosen_fee = updated_fees[book_index]
-print("Late fee for", chosen_book, "after update:", chosen_fee)
-library[chosen_book] = library[chosen_book] - 1
-print(chosen_book, "borrowed! Remaining copies:", library[chosen_book])
-print("")
+Late_Fee_Charges = [10,10,10,10,10]
+print("Late Fee Charges For Every Book is Rs 10.")
+Donation_Fee = int(input("Enter the amount of Donation for Library :"))
+Updated_Fee_Structure = list(map(lambda fee: fee + Donation_Fee, Late_Fee_Charges))
+print("Updated Late Fees:", Updated_Fee_Structure)
+Book_Index = Books.index(Book_Choice)
+chosen_fee = Updated_Fee_Structure[Book_Index]
+print("Late fee for", Book_Choice, "after update:", chosen_fee)
+Library[Book_Choice] -= 1
+print(Book_Choice, "Borrowed! Remaining Copies of Book :", Library[Book_Choice])
 print("===== LIBRARY BOOK AVAILABILITY CHECKER =====")
-print("Book Borrowed:", chosen_book)
+print("Book Borrowed:", Book_Choice)
 print("Late Fee:", chosen_fee)
-print("Updated Library Stock:", library)
-print("=============================================")
-
-
-# Issued From The Reference Code...
+print("Updated Library Stock:", Library)
