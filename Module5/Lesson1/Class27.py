@@ -20,8 +20,10 @@ class Dog :
 Dog1 = Dog("Buddy","Labrador")
 Dog2 = Dog("Candy","Pug")
 print("My First Dog's Name is :", Dog1.sound)
-# INIT METHOD 
-#SELF KEY WORD 
+# INIT METHOD : Special Function in a class that runs as soon as a new object is created from it.
+# SELF : Refers To Exact Object a method is currently working with connecting it to it's own attribute.
+
+
 # ACTIVITY :
 # 1 .Write a program to create a class with the name Student and perform the following tasks - 1. Declare a variable grade 2. Print a sentence inside the class 3. Create an object of class student and see the output
 
