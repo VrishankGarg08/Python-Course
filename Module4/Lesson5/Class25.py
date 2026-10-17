@@ -10,7 +10,7 @@ print(B)
 # MAP FUNCTION : Map Applies a function to every item in an iteratable format and returns the result.
 # EXAMPLE :
 C = [1,2,3,4]
-print(list(map(lambda x : x * 2,C)))
+print(list(map(lambda x : x * 2,C))) # Lamda Is NameLess Function
 # ZIP FUNCTION : Pairs ups matching items from 2 seprate list.. Gives a single combined result
 # EXAMPLE :
 N = ["Vrishank Garg","Abhishek Sharma","Rohit Sharma","Virat Kholi","MS Dhoni"]

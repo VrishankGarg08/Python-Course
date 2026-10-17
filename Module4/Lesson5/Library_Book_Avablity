@@ -1,10 +1,10 @@
 Books = ["Tressure Island","Gerimino Stilton","Wimpy Kid","Sundha Murti","Dog Man"]
 Copy_of_books = [1,0,16,3,12]
-Library = {book:count for book, count in zip(Books,Copy_of_books)}
+Library = {Book:count for Book,count in zip(Books,Copy_of_books)}
 print("Library :", Library)
-Available = [book for book in Books if Library[book] > 0]
+Available = [Book for Book in Books if Library[Book] > 0]
 print("Books Available:", Available)
-Book_Choice = input("Which book do you want to borrow? :").split()
+Book_Choice = input("Which Book do you want to borrow? :").split()
 if Book_Choice not in Books or Library[Book_Choice]:
     print(Book_Choice, "Sorry! We Do not have This Book in Stock")
     print("Please Visit Us Next Time")
@@ -12,12 +12,12 @@ if Book_Choice not in Books or Library[Book_Choice]:
 Late_Fee_Charges = [10,10,10,10,10]
 print("Late Fee Charges For Every Book is Rs 10.")
 Donation_Fee = int(input("Enter the amount of Donation for Library :"))
-Updated_Fee_Structure = list(map(lambda fee: fee + Donation_Fee, Late_Fee_Charges))
+Updated_Fee_Structure = list(map(lambda fee:fee + Donation_Fee, Late_Fee_Charges))
 print("Updated Late Fees:", Updated_Fee_Structure)
 Book_Index = Books.index(Book_Choice)
 chosen_fee = Updated_Fee_Structure[Book_Index]
 print("Late fee for", Book_Choice, "after update:", chosen_fee)
-Library[Book_Choice] -= 1
+Library[Book_Choice] = Library[Book_Choice]-1
 print(Book_Choice, "Borrowed! Remaining Copies of Book :", Library[Book_Choice])
 print("===== LIBRARY BOOK AVAILABILITY CHECKER =====")
 print("Book Borrowed:", Book_Choice)
