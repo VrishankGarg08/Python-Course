@@ -1,4 +1,4 @@
-# # Topic : Method
+# # Topic : Methods
 # # Method : It is a function that belongs to an object or an class.It Decribes Something an object can do
 # # Example :
 # class Dog :
@@ -51,4 +51,4 @@ print("Calling Create_obj() function...")
 Obj = Create_obj()
 print("Program End...")
 # ACTIVITY :
-# Write a Program to create a class that will find the numbers in the tuple that add  up to the sum  and return the position  of elements.The Value of sum can be taken as input from user.Tuple - (10,20,30,40,50,60,70).
+# Write a Program to create a class that will find the numbers in the tuple that add up to the sum  and return the position  of elements.The Value of sum can be taken as input from user.Tuple - (10,20,30,40,50,60,70).
