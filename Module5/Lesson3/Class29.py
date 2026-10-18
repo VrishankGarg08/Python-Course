@@ -1,2 +1,2 @@
-# Topic : Inheritance,
+# Topic : Inheritance ,
 # Inheritance : 
