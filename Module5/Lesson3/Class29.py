@@ -35,7 +35,18 @@ class Wimpy_Kid(CHARACTER) :
         self.power = power
 Wimpy = Wimpy_Kid("Wimpy",100,"Ability to make anyone LAUGH..")
 print(Wimpy.name,Wimpy.health,Wimpy.power)
+# OVERRIDING A METHOD : Method Overriding happens when a child class writes its own version of method that already exsist in the parent class
+#EXAMPLES:
+class Animal :
+    def Sound(self):
+        print("Some Animals Sound")
+class Dog(Animal):
+    def Sound(self):
+        print("Bark")
+A = Animal().Sound()
+D = Dog().Sound()
 
-
-#OVERRIDING A METHOD
-#ISSUBCLASS
+#ISSUBCLASS: Built-in Function that checks whether 1 class is child of another class .
+# Example :
+print(issubclass(Dog,Animal))
+print(issubclass(Wimpy_Kid,CHARACTER))
