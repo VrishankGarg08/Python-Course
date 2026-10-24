@@ -15,6 +15,5 @@ class BankAccount:
             self.__balance = Amount
             print("Balance Updated ")
 ACCOUNT = BankAccount("Elon Musk",0.01,"$")
-ACCOUNT.GetBalance()
 print("Owner:",ACCOUNT.owner)
 print("Balance:",ACCOUNT.GetBalance())
