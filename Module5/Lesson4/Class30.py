@@ -10,7 +10,7 @@ class BankAccount:
         return(f"{self.owner} has a Balance of {self.__balance}{self.currency}")
     def SetBalance(self,Amount):
         if Amount < 0 :
-            print("INVALID! INVALID ! BALANCE NOT FOUNDBALANCE NOT FOUND !!")
+            print("INVALID!INVALID !BALANCE NOT FOUNDBALANCE NOT FOUND !!")
         else :
             self.__balance = Amount
             print("Balance Updated ")

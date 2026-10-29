@@ -51,4 +51,15 @@ print("Calling Create_obj() function...")
 Obj = Create_obj()
 print("Program End...")
 # ACTIVITY :
-# Write a Program to create a class that will find the numbers in the tuple that add up to the sum  and return the position  of elements.The Value of sum can be taken as input from user.Tuple - (10,20,30,40,50,60,70).
+# Write a Program to create a class that will find the numbers in the tuple that add up to the sum  and return the position of elements.The Value of sum can be taken as input from user.Tuple - (10,20,30,40,50,60,70).
+class Add:
+    def Sum(self,nums,target):
+        lookup = {}
+        for i,num in enumerate(nums):
+            if target - num in lookup : # Target = Value
+                return (lookup[target - num],i)
+            lookup[num] = i
+
+value = int(input("Enter The No Of which you would like a sum :"))
+print("index1=%d , index2=%d" % 
+Add().Sum((10,20,30,40,50,60,70),value))

@@ -7,9 +7,9 @@
 #     "course":"Python"
 # }
 # print(student)
-# If we want to access a particular value, the following ways:
+# # If we want to access a particular value, the following ways:
 # print(student["name"])
-## print(student["class"]) #It will throw an error.
+# # print(student["class"]) #It will throw an error.
 # print(student.get("age"))
 # print(student.keys())
 # print(student.values())
