@@ -35,6 +35,35 @@ class Helicopter_Shot(Shape):
 Bed_Room = Helicopter_Shot(15,20)
 Bed_Room.Describe()
 
-# Polymorphism : 
-# Polymorphism Through Method Overriding 
-# Polymorphism without inheritance a simple interface
+# Polymorphism : Same Method Behaving Differentaly
+# Polymorphism Through Method Overriding : 
+# Example :
+class Animal :
+    def Sound(self):
+        print("Some Animals Sound")
+class Dog(Animal):
+    def Sound(self):
+        print("Bark")
+A = Animal().Sound()
+D = Dog().Sound()
+# Polymorphism without inheritance a simple interface :A Shared Interface
+# In Python, objects don't need a common parent class to be used interchangeably. If they simply have the same method name, they work. This is called duck typing:
+# "If it walks like a duck and quacks like a duck, it's a duck."
+class Dog:
+    def speak(self):
+        print("Woof!")
+class Robot:
+    def speak(self):
+        print("Beep boop!")
+
+class Radio:
+    def speak(self):
+        print("Now playing music ... ")
+def make_it_speak(thing):
+    thing. speak()
+make_it_speak(Dog())
+make_it_speak(Robot())
+make_it_speak(Radio())
+# What's happening: Dog, Robot, and Radio have no relationship to each other. No shared parent.
+#But they all provide a speak() method (a shared "interface"), so the function works with all of
+# them.
