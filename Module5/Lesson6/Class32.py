@@ -35,9 +35,9 @@ class Book_class:
     Book = input("Enter a Name Of Book:").split()
     borrow = input("Do You Want To Issue/borrow This Book:(YES/NO) : ").upper()
     if borrow == "YES":
-        Book = {Book} - 1
+        Book = Book - 1
         print("Your Book Is Issued")
-        return_book = input("Do You Want To Return This Book:(YES/NO)").upper()
+    return_book = input("Do You Want To Give a Book:(YES/NO)").upper()
     if borrow == "NO":
         print("Your Book Is Kept Safe With us.")
     if return_book == "YES":
