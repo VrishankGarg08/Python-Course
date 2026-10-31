@@ -39,6 +39,7 @@ class Book_class:
         self.is_borrowed = False
         print("Book Returned")
     Book = input("Enter a Name Of Book:").split()
+    borrow = input("Do You Want To Issue/borrow This Book:(YES/NO) : ").upper()
     if borrow == "YES":
         Book = Book - 1
         print("Your Book Is Issued")
