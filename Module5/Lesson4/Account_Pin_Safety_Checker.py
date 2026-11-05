@@ -18,13 +18,12 @@ class Account:
             print("Access denied.")
     def __str__(self):
         return("Account holder: "+ self.Owner)
-
 My_Account = Account("Elon Musk","1234")
 print(My_Account)
 My_Account.Show_Pin_Status()
 My_Account.__Pin = ("9999")
 print("Tried changing PIN directly from outside.")
-My_Account.Check_pin("9999")
+My_Account.Check_pin("99999")
 My_Account.Check_pin("1234")
 My_Account.Set_Pin("12345")
 My_Account.Set_Pin("9999")
