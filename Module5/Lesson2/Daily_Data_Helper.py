@@ -33,11 +33,12 @@ class PairFinder:
             Lookup[Number] = Index
         return None
 Numbers = (10, 20, 30, 40, 50, 60, 70)
+print("Find Index Value From Here :",Numbers)
 Target_Value = int(input("Enter target sum to search: "))
 Pair_Finder = PairFinder()
 Result = Pair_Finder.find_pair(Numbers, Target_Value)
 if Result is not None:
-    print("index1=%d, index2=%d" % Result)
+    print("index1=%f, index2=%f" % Result)
 else:
     print("No matching pair found.")
 del Session_Obj
