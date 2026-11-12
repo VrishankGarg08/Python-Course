@@ -8,19 +8,17 @@ class DailyMessage:
 Daily_Text = DailyMessage()
 Daily_Text.Get_Msg()
 Daily_Text.Print_Msg()
-
 class HelperSession:
     def __init__(self):
-        print("Daily Data Helper Is Created With __INIT__")
+        print("Daily Data Helper funtion Is Created With __INIT__")
     def __del__(self):
-        print("Daily Data Helper Is Deleted With __DEL__")
+        print("Daily Data Helper funtion Is Deleted With __DEL__")
 def create_session():
     print("Making session..")
     New_Session = HelperSession()
     print("Session is ready...")
     return New_Session
-print("")
-print("Calling create_session() function...")
+print("Calling create_session function...")
 Session_Obj = create_session()
 print("Program is still running...")
 class PairFinder:
@@ -42,4 +40,4 @@ if Result is not None:
 else:
     print("No matching pair found.")
 del Session_Obj
-print("Program End")
+print("Program Ended")
