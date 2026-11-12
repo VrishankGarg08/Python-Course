@@ -1,32 +1,33 @@
 from abc import ABC, abstractmethod
 class SmartDevice(ABC):
-    def show_device(self, name):
-        self.name = name
-        print("Device Name:", name)
+    def Show_Device(self, Name):
+        self.Name = Name
+        print("Device Name:", Name)
     @abstractmethod
     def turn_on(self):
         pass
 class SmartLight(SmartDevice):
     def turn_on(self):
-        print("Light is now WORKING")
+        print("Smart Light is now in WORKING")
  
 class SmartFan(SmartDevice):
     def turn_on(self):
-        print("Fan is now WORKING")
+        print("Smart Fan is now in WORKING")
  
 class SmartSpeaker(SmartDevice):
     def turn_on(self):
-        print("Speaker is now WORKING")
+        print("Smart Speaker is now in WORKING")
 
 Light = SmartLight()
 Fan = SmartFan()
 Speaker = SmartSpeaker()
-Light.show_device("Living Room Light")
+Light.Show_Device("Living Room Light")
 Light.turn_on()
-Fan.show_device("Bedroom Fan")
+Fan.Show_Device("Bedroom Fan")
 Fan.turn_on()
-Speaker.show_device("Musical Speaker")
+Speaker.Show_Device("Musical Speaker")
 Speaker.turn_on()
+
 class SecurityCamera:
     def check_status(self):
         print("Security Camera is Recording")
