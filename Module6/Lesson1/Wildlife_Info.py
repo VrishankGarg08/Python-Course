@@ -50,71 +50,32 @@ heading_text = heading_font.render(
     True,
     pygame.Color("black")
 )
- 
-# Position the heading
+
 heading_rect = heading_text.get_rect(
     center=(SCREEN_WIDTH // 2, 45)
 )
- 
-# Render the wildlife fact
+
 fact_text = fact_font.render(
     "Tigers are powerful wild cats.",
     True,
-    pygame.Color("black")
-)
- 
-# Position the fact text
-fact_rect = fact_text.get_rect(
-    center=(SCREEN_WIDTH // 2, 420)
-)
- 
- 
-# Main game loop
+    pygame.Color("black"))
+
+fact_rect = fact_text.get_rect(center=(SCREEN_WIDTH // 2, 420))
+
 def game_loop():
-    # Create a clock to control the frame rate
     clock = pygame.time.Clock()
- 
     running = True
- 
     while running:
-        # Check events
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
- 
-        # Draw the background
-        display_surface.blit(
-            background_image,
-            (0, 0)
-        )
- 
-        # Draw the wildlife image
-        display_surface.blit(
-            wildlife_image,
-            wildlife_rect
-        )
- 
-        # Display the heading and fact
-        display_surface.blit(
-            heading_text,
-            heading_rect
-        )
- 
-        display_surface.blit(
-            fact_text,
-            fact_rect
-        )
- 
-        # Update the screen
+        display_surface.blit(background_image,(0, 0))
+        display_surface.blit(wildlife_image,wildlife_rect)
+        display_surface.blit(heading_text,heading_rect)
+        display_surface.blit(fact_text,fact_rect)
         pygame.display.flip()
- 
-        # Limit the game to 30 frames per second
         clock.tick(30)
- 
-    # Close Pygame
+
     pygame.quit()
- 
- 
-# Run the application
 if __name__ == "__main__":
     game_loop()
