@@ -11,7 +11,7 @@ while not Done :
             pygame.quit()
     pygame.display.flip()
 
-# pygame.init() : It is Basically A Switch Used Turning On All The Features Of Pygame,Like : Graphic,Sound,Input....
+# pygame.init() : It is Basically A Switch Used Turning On All The Features Of Pygame,Like : Graphic,Sound,Input....IT IS ALSO CALLED INITALLIZING PYGAME
 # pygame.display :Creates A Window / Screen For Pygame
 # pygame.display.set_mode() : [set_mode() = Function ] Over Here in Set_Mode Tells The Dimensions (Size) Of The Window. First No. = Width & Second No. = Height..THERE ARE ALWAYS 2 () AFTER set_mode()
 # pygame.event : Things That Need External Force(Input) In The Window..Like : Key Pressing,Mouse Clicking,etc..
