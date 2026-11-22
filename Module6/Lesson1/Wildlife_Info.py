@@ -41,8 +41,8 @@ import pygame
 pygame.init()
  
 # Set screen dimensions
-SCREEN_WIDTH = 500
-SCREEN_HEIGHT = 500
+SCREEN_WIDTH = 600
+SCREEN_HEIGHT = 650
  
 # Create the display window
 display_surface = pygame.display.set_mode(
@@ -63,7 +63,7 @@ background_image = pygame.transform.scale(
 # Load and scale the wildlife image
 wildlife_image = pygame.transform.scale(
     pygame.image.load("Tiger.png").convert_alpha(),
-    (220, 220)
+    (220, 200)
 )
  
 # Position the wildlife image at the centre
@@ -76,7 +76,7 @@ wildlife_rect = wildlife_image.get_rect(
  
 # Create fonts for the heading and information
 heading_font = pygame.font.Font(None, 42)
-fact_font = pygame.font.Font(None, 28)
+fact_font = pygame.font.Font(None, 30)
  
 # Render the heading text
 heading_text = heading_font.render(
@@ -101,8 +101,7 @@ fact_text = fact_font.render(
 fact_rect = fact_text.get_rect(
     center=(SCREEN_WIDTH // 2, 420)
 )
- 
- 
+
 # Main game loop
 def game_loop():
     # Create a clock to control the frame rate
