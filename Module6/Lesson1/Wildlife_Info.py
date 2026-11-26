@@ -32,7 +32,7 @@
 # if __name__ == "__main__":
 #     Game_Loop()
 
-# Wildlife Information Display
+# Wildlife Information Display 
  
 # Import necessary library
 import pygame
